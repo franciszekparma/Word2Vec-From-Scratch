@@ -5,11 +5,11 @@ import os
 def build_data(path="dataset/flickr30k_captions", show_stats=False): 
   if not os.path.exists(path):
     dataset = load_dataset("embedding-data/flickr30k_captions_quintets")
-    dataset.save_to_disk("dataset/flickr30k_captions")
+    dataset.save_to_disk("dataset")
   else:
     print(f"Loading data...")
     
-  dataset = Dataset.from_file("dataset/flickr30k_captions/train/data-00000-of-00001.arrow")
+  dataset = Dataset.from_file("dataset/train/data-00000-of-00001.arrow")
 
   all_sentences = []
   for example in dataset:

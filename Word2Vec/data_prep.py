@@ -30,7 +30,8 @@ def build_data(path="data/flickr30k_captions", show_stats=SHOW_DATA_STATS):
     print(f"Total sentences: {len(all_sentences)}")
     print(f"Total words (with duplicates): {len(all_words)}")
     print(f"Vocab size: {len(vocab)}")
-  return vocab, all_sentences
+    
+  return vocab, all_sentences, all_words_in_sen
 
 if __name__ =='__main__':
   build_data()

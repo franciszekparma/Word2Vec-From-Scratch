@@ -4,3 +4,4 @@ venv
 #dataset_info.json
 #state.json
 Word2Vec/__pycache__
+.gitignore

@@ -24,7 +24,7 @@ def train_model(
     
     for s, sentence in enumerate(all_sentences):
       for w, word in enumerate(all_words_in_sen):        
-        y_pos_words = all_words_in_sen[max(0, w - WINDOW) : w] + all_words_in_sen[w + 1 : w + WINDOW + 1] #the words that we want the target to be simillar to
+        y_pos_words = all_words_in_sen[max(0, w - WINDOW) : w] + all_words_in_sen[w + 1 : w + WINDOW + 1] #the words that we want the target to be similar to
         y_pos_embds = [contex_embds[x] for x in y_pos_words]
         y_pos_labels = [1 for x in range(len(y_pos_words))]
         

@@ -3,7 +3,7 @@ from torch import nn
 import torch.nn.functional as F
 from tqdm.auto import tqdm
 
-from utils import EMB_DIM, DEVICE
+from utils import EMB_DIM, DEVICE, EPOCHS
 from data_prep import build_data
 from train import train_model
 
@@ -24,8 +24,8 @@ def main():
   
   model = Word2Vec().to(DEVICE)
   
-  optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=5e-3)
-  loss_fn = nn.CrossEntropyLoss()
+  optimizer = torch.optim.AdamW(list(target_embds.values()) +  list(contex_embds.values()), lr=1e-4, weight_decay=5e-3)
+  loss_fn = nn.BCEWithLogitsLoss()
   
   train_model(
     vocab, 

@@ -176,9 +176,9 @@ Hyperparameters in `utils.py`:
 
 | Parameter | Default | Recommended | Description |
 |-----------|---------|-------------|-------------|
-| `EMB_DIM` | 1 | 128-300 | Embedding dimensions |
-| `WINDOW` | 1 | 5-10 | Context window size |
-| `EPOCHS` | 1 | 10-50 | Training epochs |
+| `EMB_DIM` | 128 | 128-300 | Embedding dimensions |
+| `WINDOW` | 4 | 5-10 | Context window size |
+| `EPOCHS` | 32 | 10-50 | Training epochs |
 | `SEED` | 24 | - | Random seed |
 | `LOWER_WORDS` | True | True | Lowercase words |
 

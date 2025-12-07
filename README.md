@@ -55,7 +55,7 @@ For each word in the corpus, the model:
 ### Mathematical Formulation
 
 ```
-L = -[y * log(σ(e_center @ e_positive)) + (1 - y) * log(1 - σ(e_center @ e_negative))]
+L = -[y * log(σ(e_center @ e_positive.T)) + (1 - y) * log(1 - σ(e_center @ e_negative.T))]
 ```
 
 ### Implementation

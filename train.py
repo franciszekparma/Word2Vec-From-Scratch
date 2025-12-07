@@ -16,6 +16,8 @@ def train_model(
   epochs
   ):
   
+  print("Training...")
+  
   for epoch in tqdm(range(epochs)):
     
     losses = []

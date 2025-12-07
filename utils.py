@@ -6,10 +6,10 @@ DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 LOWER_WORDS = True
 SHOW_DATA_STATS = False
 
-EMB_DIM = 32
-WINDOW = 2
+EMB_DIM = 256
+WINDOW = 5
 
-EPOCHS=32
+EPOCHS = 32
 
 def sample_negatives(vocab, n, context_words, center_word):
   neg_vocab = vocab.copy()

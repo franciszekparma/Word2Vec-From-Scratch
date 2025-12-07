@@ -217,7 +217,7 @@ for epoch in range(epochs):
 ## Results
 
 <p align="center">
-  <img src="images/embeddings_tsne.png" alt="t-SNE Visualization" width="800"/>
+  <img src="images/embeddings.png" alt="t-SNE Visualization" width="800"/>
 </p>
 
 With sufficient training (EMB_DIM=128+, EPOCHS=20+), semantically similar words cluster together in embedding space.

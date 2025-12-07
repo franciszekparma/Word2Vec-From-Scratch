@@ -1,7 +1,4 @@
 venv
 .history
-#dataset_dict.json
-#dataset_info.json
-#state.json
 Word2Vec/__pycache__
 .gitignore

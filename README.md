@@ -263,7 +263,6 @@ def cosine_sim(emb1, emb2):
 | Uniform negative sampling | Frequency-based sampling (f^0.75) |
 | No subsampling | Probabilistic downsampling |
 | Dictionary storage | `nn.Embedding` layer |
-| No model saving | Checkpointing |
 | Sequential training | Mini-batching |
 
 ---
@@ -274,7 +273,6 @@ def cosine_sim(emb1, emb2):
 - [ ] Subsampling frequent words
 - [ ] Batch processing
 - [ ] `nn.Embedding` layer
-- [ ] Model checkpointing
 - [ ] Evaluation benchmarks (SimLex-999)
 - [ ] CBOW variant
 

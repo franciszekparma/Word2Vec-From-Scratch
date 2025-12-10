@@ -186,7 +186,7 @@ Hyperparameters in `utils.py`:
 |`SHOW_DATA_STATS` | False | True | Show stats about data |
 | `LOWER_WORDS` | True | True | Lowercase words |
 | `LOAD_CHECKPOINT` | False | - | Load model checkpoint |
-| `PATH_CHECHPOINT` | "" | - | Path to the checkpoint |
+| `PATH_CHECHPOINT` | "" | - | Checkpoint file path |
 | `WORD_A` | "hard" | "cat" |  Comparison word A |
 | `WORD_B` | "work" | "dog" |  Comparison word B |
 

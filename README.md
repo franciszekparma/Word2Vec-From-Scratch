@@ -183,12 +183,12 @@ Hyperparameters in `utils.py`:
 |`LR` | 1e-4 | 1e-4 | Learning rate |
 | `SEED` | 24 | - | Random seed |
 | `DEVICE` | auto | cuda | Tensor storage location |
-|`SHOW_DATA_STATS` | False | - | Show stats about data |
+|`SHOW_DATA_STATS` | False | True | Show stats about data |
 | `LOWER_WORDS` | True | True | Lowercase words |
 | `LOAD_CHECKPOINT` | False | - | Load model checkpoint |
 | `PATH_CHECHPOINT` | "" | - | Path to the checkpoint |
-| `WORD_A` | "hard" | - |  Comparison word A |
-| `WORD_B` | "work" | - |  Comparison word B |
+| `WORD_A` | "hard" | "cat" |  Comparison word A |
+| `WORD_B` | "work" | "dog" |  Comparison word B |
 
 ---
 

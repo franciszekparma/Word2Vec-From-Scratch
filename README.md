@@ -190,8 +190,8 @@ Hyperparameters in `utils.py`:
 | `PATH_CHECHPOINT` | "" | - | Checkpoint file path |
 | `WORD_A` | "man" | "boy" |  Comparison word A |
 | `WORD_B` | "woman" | "girl" |  Comparison word B |
-| `TOPK_WORD` | "road" | "water" | Top k word |
-| `K` | 3 | 5 | K in Top k |
+| `TOPK_WORD` | "road" | "water" | Word used in Top K |
+| `K` | 3 | 5 | K used in Top K |
 
 ---
 

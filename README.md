@@ -86,6 +86,7 @@ Word2Vec-From-Scratch/
 │   ├── train.py        # Training loop
 │   ├── data_prep.py    # Data loading and preprocessing
 │   ├── utils.py        # Config and utility functions
+│   ├── check_top_k.py  # Top k nearest words checking
 │   └── check_sim.py    # Word similarity checking
 ├── data/
 │   └── train/

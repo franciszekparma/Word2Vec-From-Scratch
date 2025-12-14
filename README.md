@@ -91,6 +91,7 @@ Word2Vec-From-Scratch/
 ├── data/
 │   └── train/
 │       └── data-00000-of-00001.arrow
+├── checkpoint.md
 ├── images/
 ├── .gitignore
 ├── LICENSE

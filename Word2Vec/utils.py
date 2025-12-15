@@ -46,6 +46,9 @@ def sample_negatives(vocab, n, context_words, center_word):
 
 def euc_dist(emb1, emb2):
   return ((torch.sum((emb1 - emb2)**2))**0.5).item()
+  
+def cosine_sim(emb1, emb2):
+  return ((emb1 @ emb2.T) / (torch.norm(emb1) * torch.norm(emb2))).item()
 
 def top_k(word, embds, k):
   w_emb = embds[word]
@@ -56,5 +59,3 @@ def top_k(word, embds, k):
   distances = sorted(distances, key=lambda x: x[1])
   best_dist = distances[1:k+1]
   return best_dist
-def cosine_sim(emb1, emb2):
-  return ((emb1 @ emb2.T) / (torch.norm(emb1) * torch.norm(emb2))).item()
